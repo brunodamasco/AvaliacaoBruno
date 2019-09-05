@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundoamarelo"
+    tools:context=".view.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Prova"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editMinimo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="valor minimo"
+            android:layout_marginHorizontal="40dp"/>
+
+        <EditText
+            android:id="@+id/editMaximo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="valor máximo"
+            android:layout_marginHorizontal="40dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:onClick="enviar"
+        android:textSize="24sp"
+        android:text="Enviar"/>
+
+</LinearLayout>
